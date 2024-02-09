@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Charges";
+}
+
+<h2>Calculate Photography Service Charges</h2>
+
+<div class="form-group">
+    <label for="numberOfPictures">Number of Pictures:</label>
+    <input type="number" id="numberOfPictures" class="form-control" placeholder="Enter number of pictures">
+    <small id="numberHelp" class="form-text text-muted">Please enter a positive number.</small>
+</div>
+
+<div class="form-group">
+    <label for="chargePerPicture">Charge per Picture ($):</label>
+    <input type="text" id="chargePerPicture" class="form-control" value="50" readonly>
+</div>
+<br />
+<button id="calculateButton" class="btn btn-primary">Calculate Total</button>
+
+<div class="form-group mt-3">
+    <label for="totalCharge">Total Charge ($):</label>
+    <input type="text" id="totalCharge" class="form-control" readonly>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/calculateCharges.js"></script>
+}
+
