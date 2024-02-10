@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
     $('#calculateButton').click(function () {
+        // This will catch the values before calculating
         var numberOfPictures = $('#numberOfPictures').val();
         var chargePerPicture = $('#chargePerPicture').val();
 

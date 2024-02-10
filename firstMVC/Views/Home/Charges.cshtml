@@ -4,24 +4,34 @@
 
 <h2>Calculate Photography Service Charges</h2>
 
+
+<!--This is a form for calculating pricing on photographs -->
+
+
 <div class="form-group">
+    <!-- First input for number of photos -->
     <label for="numberOfPictures">Number of Pictures:</label>
     <input type="number" id="numberOfPictures" class="form-control" placeholder="Enter number of pictures">
     <small id="numberHelp" class="form-text text-muted">Please enter a positive number.</small>
 </div>
+
+<!-- Inpute for charge per picture, but it is READONLY -->
 
 <div class="form-group">
     <label for="chargePerPicture">Charge per Picture ($):</label>
     <input type="text" id="chargePerPicture" class="form-control" value="50" readonly>
 </div>
 <br />
+
+<!-- button to run all calculations -->
+
 <button id="calculateButton" class="btn btn-primary">Calculate Total</button>
 
 <div class="form-group mt-3">
     <label for="totalCharge">Total Charge ($):</label>
     <input type="text" id="totalCharge" class="form-control" readonly>
 </div>
-
+<!-- Connection to my jquery file and some other things. -->
 @section Scripts {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/calculateCharges.js"></script>
